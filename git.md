@@ -23,7 +23,7 @@
 
 7. 중간중간 git status로 상태 확인
 
-8. git commit -m "파일명"
+8. git commit -m "파일명" -m 안 했을 시 $:q!쓰기(저장 안 하고 나갈게)/$:wq!(저장하고 나갈게)
 
 9. git push
 
@@ -62,3 +62,4 @@
 4. git add 파일 폴더
 5. git commit -m "설명"
 6. git push
+
