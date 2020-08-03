@@ -1,6 +1,14 @@
-1. git clone 동기화 폴더 생성
 
-   git clone(git hub주소)
+
+---
+
+##  markdown 사용법 정리하기
+[마크다운 내용](./a_asset /a_markdown.md)
+
+---
+
+
+1. git clone 동기화 폴더 생성  git clone(git hub주소)
 
 2. 폴더로 이동
 
