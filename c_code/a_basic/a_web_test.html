@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>첫 번째 웹 문서 만들기</title>
+    <style>
+      /*슬러시 별표 별표 슬러시*/
+      body { background-color: #aff ;}
+      p{background-color:#778800; color:white;}
+      .p_text { font-size :2rem;}
+      div { width:40px; height:60px; 
+            background-color:salmon; margin-bottom:5px;}
+      #box2{border-radius:40px; background-color:magenta;}
+      #box3{border-radius:40px; background-color:blue;}
+      #box4{width:300px; border-radius:60px; background-color:yellow;}
+      .one{ color: #fac;}
+      .two{ text-decoration:underline;}
+      .three {text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5);}
+      .and:hover{color:#fff;}  
+    </style>
+<!--어렵군-->
+  </head>
+
+  <body>
+    <h1 class="box one two three and">웹 문서 처음으로 만들어 보기!</h1>
+    <p class="p_text">
+      웹 문서를 처음으로 만들어 보았다. </br>
+      나름 재미??</br>있나요?</br>
+    </p>
+    <div id="box"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+  <!--설명, 내용, 누군가에게 지시, 작성날짜,...주석...-->
+
+
+  <script>
+   // 한 줄 주석으로 줄바꿈되면, 
+   //주석이 자동으로 풀림
+   /* 여러줄 주석
+       추가설명이 가능
+*/
+    var myP  = document.getElementsByTagName('p')[0];
+
+    myP.addEventListener( 'click', function( ){myP.style.backgroundColor ="#000";} );
+  
+  </script>
+  </body> 
+</html>
