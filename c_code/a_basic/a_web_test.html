@@ -43,7 +43,9 @@
     var myP  = document.getElementsByTagName('p')[0];
 
     myP.addEventListener( 'click', function( ){myP.style.backgroundColor ="#000";} );
-  
+
+    myP.addEventListener( 'click', function( ){if( myP.style.backgroundColor ==="rgb(0,0,0)"){myP.style.backgroundColor = "#f00";}else{myP.style.backgroundColor = "#000";}});  
+
   </script>
   </body> 
 </html>
