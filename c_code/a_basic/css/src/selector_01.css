@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*selector_01.css*/
+
+body{background-color:#fffff}
+
+h1{width:400px; height:40px; background-color:#fca;}
+ul > li{border-width:1px; border-style: solid; border-color: #f8a;}
+ol  li{background-image:linear-gradient(#cfa,#ca7);}
+
+li a{color:#ff0;}/*1000점*/
+div>a {color:#afa;}
+a{background-color:#333; color:#fff;}/*1점*/
+
+div.wrap{width:80% ;background-color:#ccc; border:2px solid #7fa; }
+.wrap{width:80% ;background-color:#ad7;}
+/*클래스타입이라서 div.wrap인 자손선택자를 덮을 수 없다.
+ .wrap은101점, div.wrap은 1101점  우선순위 법칙!*/
+
+ div
+ .box
+ #box
+ div div
+ div #box
+ /*선택자는 기본:나중에 작성한 내용을 기준으로 처리
+하지만, 기본 타입 선택자보다는 < class선택자가 우선<id선택자< 자손 또는 자식선택자가 우선< 인라인 선택자(js를 통한)
+타입 1점
+calss 100점
+id선택자 500점
+자손/자식선택자 1000점
+*/
+.nth{width:100px; height:auto;}
+.nth>li:nth-child(2n-1){ background-color:#ccc;}
