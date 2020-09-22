@@ -1,0 +1,125 @@
+@charset "utf-8";
+/*prototpye.css*/
+
+#header:after,#header::after {content=" "; clear:both;}
+#header{
+  margin:0; padding:0;
+  width:700px;height:80px;
+background-color: green;
+}
+
+.logo{
+  float:left;
+  margin:15px; 
+  width:100px; height:50px; 
+  text-align:center; font-size:2rem;
+  background-color: #fff;}
+
+.navi{
+  float:right; 
+  margin-top:30px;
+
+}
+
+.navi1{
+  float:left; margin:5px;
+  width:100px; height:30px; 
+  text-align:center;  font-size:1rem;
+  background-color: #fff;
+}
+.navi2{
+  float:left; margin:5px;
+  width:100px; height:30px; 
+  background-color: #fff;
+}
+.navi3{
+  float:left; margin:5px;
+  width:100px; height:30px; 
+   background-color: #fff;
+}
+.navi4{
+  float:left; margin:5px;
+  width:100px; height:30px; 
+    background-color: #fff;
+}
+
+#banner{
+  width:700px;height:250px;
+  background-color: lemonchiffon;
+  text-align:center; font-size:3rem;
+}
+
+#aside{
+  width:700px; height:35px;
+  background-color: navy;
+  text-align:center; font-size:1rem;
+  color:white;
+}
+#article:after,#article::after {content=" "; clear:both;}
+#article{
+  width:700px; height:300px;
+  background-color: #fff;
+}
+.article1{
+  margin:0; padding:0;
+  float:left;
+  width:350px; height:300px;
+  background-color: pink;
+}
+.article1 .box01 {
+  float:left; 
+  margin-top:20px; margin-left:25px; margin-right:10px;
+  width:140px; height:120px;
+  background-color: #fff;
+  font-size:2rem; text-align:center;
+}
+.article1 .box02 {
+  float:left; 
+  margin-top:20px; margin-right:20px;
+  width:140px; height:120px;
+  background-color: #fff;
+}
+.article1 .box03 {
+  float:left; 
+  margin-top:10px; margin-left:25px; 
+  width:140px; height:120px;
+  background-color: #fff;
+}
+.article1 .box04 {
+  float:left; 
+  margin-top:10px; margin-left:10px; margin-right:20px;
+  width:140px; height:120px;
+  background-color: #fff;
+}
+
+
+.article:after,.article::after  {content=" "; clear:both;}
+.article2{
+  margin:0; padding:0;
+  float:left;
+  width:350px; height:300px;
+  background-color:purple;
+}
+.article2 .box01{
+  align:center;
+  margin:15px; padding:10px; margin-left:35px;
+  float:left;
+  width:258px; height:50px;
+  background-color: #fff;}
+ 
+.article2 .box02{
+  margin:15px; padding:10px; margin-left:35px;
+  float:left;
+  width:258px; height:50px;
+  background-color: #fff;}
+.article2 .box03{
+  margin:15px; padding:10px; margin-left:35px;
+  float:left;
+  width:258px; height:50px;
+  background-color: #fff;
+  font-size:2rem; text-align:center;}
+
+
+#footer{width:700px; height:80px;
+background-color: yellow;
+font-size:2rem; text-align:center;}
