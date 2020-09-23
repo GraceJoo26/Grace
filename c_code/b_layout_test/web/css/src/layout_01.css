@@ -2,29 +2,74 @@
 /*layout_01.css*/
 
 #wrap{
-  width:600px; height:500px; min-height:500px;
-  margin:100px auto;
+  width:600px; height:auto; min-height:500px;
+  margin:auto;
 }
 /*#header==========*/
+#header:after,#header::after{content:" "; display:block; clear:both;}
 #header{
-  width:100%; height:100px;
-  background-color:#f07;
+  padding:10px;
+ /* width:calc(100% - 20px); */ height:auto;
+  background-color:#f07; 
+  box-sizing:border-box;
+}
+
+h1{
+  float:left; 
+  width:120px; height:100px;
+  background-color:#ccc;
+}
+h1 a{
+  display:block; width:100%; height:100%;
+  font-size:1rem;}
+
+.navigation{
+  float:right; 
+  width:400px; height:100px;
+}
+.navigation > ul {
+  width:100%; height:100%; list-style:none;
+  margin:0; padding:0;
+  
+}
+.navigation ul li{
+  float:left; width:60px; height:100%;
+  margin-right: 8px;
+  background-color:#fac; 
+}
+
+.navigation ul li:nth-child(2n){
+  background-color:#0ac;
+}
+
+.navigation ul li:last-child {
+  margin-right:0;
+}
+
+.navigation a {
+  display:block; width:100%; height:100%;
 }
 /*#section==========*/
 
 #section{width:100%; height:300px;
   }
 
-#section > h2 {
+.hidden{
   width:0; height:0; overflow:hidden;
 }
-  .sect_01{ float:left;
-  width:40%; height:300px;
-  background-color:#329664; 
+.clearfix::after, .clearfix:after{content:" "; display:block; clear:both;}
+ #section>div {
+   float:left; height:300px;
+  } 
+  /* common.css:공통의 class이름을 부여하여, 
+  반복 사용하는형태를 이름으로 기입함으로 인하여, 
+  빠르고 쉽게 웹페이지를 구성하도록 처리하는 기능*/
+
+  .sect_01{ 
+  width:40%; background-color:#329664; 
 }
-  .sect_02{ float:left;
-  width:60%; height:300px;
-  background-color:#555555; 
+  .sect_02{ 
+  width:60%; background-color:#555555; 
 }
 
 #aside:after,#aside::after{content:" ";display:block; clear:both;}
@@ -32,43 +77,43 @@
 #aside h2{
   width:0; height:0; margin:0;overflow:hidden
 }
-  .side_01{width:33.333333%; height:300px;
-          background-color:#ADAADD;float:left}
-  .side_02{width:33.333333%; height:300px;
-          background-color:#607259;float:left;}
-  .side_03{width:33.333333%; height:300px;
-          background-color:#ad6fdd; float:left}
+  #aside > div{float:left; width:33.333333%; height:300px;}
+  .side_01{
+          background-color:#ADAADD;}
+  .side_02{
+          width:33.333334%;
+          background-color:#607259;}
+  .side_03{
+          background-color:#ad6fdd;}
 
 
-#article:after,#article::after
-{content:" ", display:block; clear:both;}
+
 #article{width:auto; height:300px;}
-#article h2{
-  width:0; height:0; overflow:hidden
-}
-  
-  .art_01{float:left;
+
+/*art_base_01 .art_01은 띄어쓰기로 인해 art_base_01의 자손이 된다 띄어쓰기 안 함*/
+  .art_base_01{float:left; width:70%;height:150px;}
+
+  .art_base_01.art_01{
           width:30%; height:300px;
           background-color:#27294D;}
-  .art_02{float:left;
+  .art_base_01.art_02{
           width:70%; height:150px;
           background-color:#ff7259;}
-  .art_03{float:left;
+  .art_base_01.art_03{
             width:70%; height:150px;
             background-color:#ad6fdd;}
 
 
 #content{width:100%; height:450px;}
-#content h2{
-             width:0; height:0; overflow:hidden
-}
-#content .art_02{float:left;
-  width:70%; height:150px;
+
+.cont_base_01{float:left; width:70%;}
+#content .art_02{
+   height:150px;
   background-color:#ff7259;}
-#content .art_03{float:left;
-  width:70%; height:300px;
+#content .art_03{
+   height:300px;
   background-color:#ad6fdd}
-#content .art_01{float:left;
+#content .art_01{
                  width:30%; height:450px;
                  background-color:#27294D; margin-top:-150px;}
 
