@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var a = 2020;
+    var b = 'p2020';
+    var c = parseInt(b);
+    var d = String(a);
+    var typeD=typeof(d);
+   
+   //console.log(a+1);
+   //console.log(b+1);
+   //console.log(c);
+
+   //console.log(typeof(a),a); //a라는 변수가 어떤타입이니?-> Number, a도 보여줘
+   //console.log(typeof(b),b);//string
+   //console.log(typeof(c),c);//number
+   //console.log(typeD,d);
+
+
+  //partsInt()는 강제로 숫자로 변환하는 기능
+  //숫자처리가 가능한 부분만 변환을 한다.
+  //처음부터 숫자로 변환이 되지 않으면, 값이 도출되지 않는다.
+  //값을 도출할 수 없는 숫자가 생성된다.(NaN)
+
+  var t= !true;
+  console.log(typeof(t),t);
+  var n=0;
+  console.log(!n);
+  
+  var nn=typeof(n) == 'number' ; 
+  console.log(nn);
+  //!는 반대를 의미,true앞에 !를 사용하면 false가된다.
+  //숫자 0은 false, 1은 true를 의미하기도 한다.
+  //==은 같다라는 의미, 비교할 때 사용하는 형태
+//----------------------------------------------------------------
+
+  var myName;
+  console.log(myName);//값이 정해진 것이 없으므로 미정의되었다.
+  console.log(typeof(myName));//형타입 자체가 undefined
+
+  myName=100;
+  console.log( myName );
+  console.log( typeof(myName));
+
+  myName='문자로 변경하여 대체';
+  console.log(myName);
+  console.log(typeof(myName));
+  
+  myName=null;
+  console.log(myName);
+  console.log(typeof(myName));
+
+  
+      //아파트-부수고 새로짓는 것 재건축(완전한 신축):undefined
+      //기존 아파트를 싹 뜯어고치는 것 리모델링:null
+
+  var arr=['포도','사과','블루베리','오렌지'];//배열만들겟습니다.
+  arr[4]='복숭아';
+  arr[0]='바나나';
+  console.log(arr);
+
+  var arr2=[['귤','머루','포도'],['오렌지','메론','샤인머스캣'], 1,100,null,false,['배고파!']];
+  console.log(arr2[1][1] ); //메론나옴
+//----------------------------------------------------------------------------------------------
+
+var obj ={
+  '귤':'주황색',
+  '키위':'녹색',
+  '포도':'보라색',
+  'my Color':'#f06',
+  lunch:'13:20'
+};
+console.log(obj['귤']);
+console.log(obj['my Color']);
+console.log(obj.lunch);
+
+//object형태는 순서가 존재하지 않는다.
+
+
+  </script>
+   
+
+
+</body>
+</html>
