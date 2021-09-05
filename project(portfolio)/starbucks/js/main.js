@@ -118,18 +118,25 @@ window.addEventListener('scroll',_.throttle(function(){
         display : 'block'
     });
     }
-  },300));
+  },300)); 
 //_.throttle=>scroll event일때 많은 횟수에 걸쳐 실행되지 않도록 control함
 //_.throttle(함수, 시간)
 //opacity 속성처럼 값을 숫자로 입력하는 속성들은, 전환효과 (translation 속성이나 gsap 라이브러리등)를 통해 요소의 전/후 상태를 중간 숫자의 값으로 자연스럽게 만들어 줄 수 있지만, display속성처럼 값이 숫자가 아닌 속성은 전/후 상태의 중간값이 존재하지 않기 때문에, 자연스러운 전환효과를 적용 할 수 없습니다.
 
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
-fadeEls.forEach(function(fadeEl, index){
+fadeEls.forEach(function(fadeEl, index){ //index는 반복되는 횟수
   //gsap.to(요소, 지속시간, 옵션=>css속성 넣을 수 있다.);
-  gsap.to( fadeEl , 1 , {
+  gsap.to( fadeEl , 1 , { //animation처리해주는 라이브러리에서 제공
     delay : ( index + 1 ) * .7, // 0.7, 1.4, 2.1, 2.7
     opacity : 1
   });
 });
-//오.. 그냥 index만 치면 되는군.
+//오.. 그냥 index => 순서임!! 만 치면 되는군.
+
+//new Swiper(선택자, 옵션)
+new Swiper('.notice-line .swiper', {
+  direction:'vertical',
+  autoplay: true,
+  loop: true
+});
