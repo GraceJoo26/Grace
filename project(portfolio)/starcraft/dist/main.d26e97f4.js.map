@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["$","document","ready","click","toggle"],"mappings":";AAAQA,EAAEC,UAAUC,MAAM,WACdF,EAAE,aAAaG,MAAM,WACjBH,EAAE,WAAWI","file":"main.d26e97f4.js","sourceRoot":"..","sourcesContent":["        $(document).ready(function(){\r\n            $(\".cloaking\").click(function(){\r\n                $(\".wraith\").toggle();\r\n    });\r\n  });"]}
